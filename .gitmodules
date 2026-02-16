@@ -1,0 +1,6 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/artbok/olympics_preparation_client
+[submodule "server"]
+	path = server
+	url = https://github.com/artbok/olympics_preparation_server
