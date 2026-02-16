@@ -1,0 +1,16 @@
+name: olpr
+
+services:
+  client:
+    image: artbok/olpr:client-001
+    ports:
+      - "60080:80" 
+    environment:
+      - SERVER_URL=http://localhost:5000
+    depends_on:
+      - server
+
+  server:
+    image: artbok/olpr:server-001
+    ports:
+      - "5000:5000" 
